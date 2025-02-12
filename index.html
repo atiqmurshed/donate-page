@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assignment-5</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <style>
+        .btn{
+           color:khaki;
+           background-color: blue;
+        }
+    </style> -->
+
+</head>
+
+<body>
+  <nav class="flex justify-between bg-yellow-50">
+    <button id="blog-btn" class="ml-10 rounded-md p-4 bg-green-300 font-bold text-black">Blog</button>
+    <!-- <button class="btn btn-error ml-10 bg-green-300 font-bold text-black">Blog</button> -->
+    <div class="flex items-center gap-2">
+
+      <img class="text-4" src="./assets/logo.png" alt="">
+      <p class="font-bold text-black">Donate Bangladesh</p>
+    </div>
+    <div class="flex gap-2 mr-10 items-center font-bold text-black">
+      <img src="./assets/coin.png" alt="">
+      <p id="main-amount">5500</p>
+      <p>BDT</p>
+    </div>
+  </nav>
+
+
+  <main>
+    <div id="transection-history" class="mt-8 mb-6 text-center shadow-md">
+      <button id="donate-btn" class="btn bg-green-300">Donation</button>
+      <button id="history-btn" class="btn">History</button>
+    </div>
+
+
+    <section id="show-section" class="m-10 rounded-md w-1140 px-10 min-h-lvw">
+      <div class="flex hero mx-auto bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="./assets/noakhali.png" class="max-w-sm rounded-md shadow-2xl" />
+        </div>
+        <div>
+          <div class="flex gap-2 font-bold">
+            <img src="./assets/coin.png" alt="">
+            <div id="first-amount">1420</div>
+            <p>BDT</p>
+          </div>
+          <p class="py-6">
+            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+            help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
+            makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
+            of those in need.
+          </p>
+          <div class="form-control">
+            <input id="input-valu" type="text" placeholder="Donate Amount" class="input input-bordered" required />
+            <button class="btn btn-button bg-green-500" id="donate">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="show-section2" class="m-10 rounded-md w-1140 px-10 min-h-lvw">
+      <div class="flex hero mx-auto bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="./assets/feni.png" class="max-w-sm rounded-md shadow-2xl" />
+        </div>
+        <div>
+          <div class="flex gap-2 font-bold">
+            <img src="./assets/coin.png" alt="">
+            <p id="amount2">1025</p>
+            <p>BDT</p>
+          </div>
+          <p class="py-6">
+            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+            help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
+            makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
+            of those in need.
+          </p>
+          <div class="form-control">
+            <input id="input-valo" type="text" placeholder="Write Donate Amount" class="input input-bordered"
+              required />
+            <button class="btn btn-button bg-green-500" id="dona">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="show-section3" class="m-10 rounded-md w-1140 px-10 min-h-lvw">
+      <div class="flex hero mx-auto bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="./assets/quota-protest.png" class="max-w-sm rounded-md shadow-2xl" />
+        </div>
+        <div>
+          <div class="flex gap-2 font-bold">
+            <img src="./assets/coin.png" alt="">
+            <p id="amount3">10510</p>
+            <p>BDT</p>
+          </div>
+          <p class="py-6">
+            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+            help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
+            makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
+            of those in need.
+          </p>
+          <div class="form-control">
+            <input id="input-val" type="text" placeholder="Write Donate Amount" class="input input-bordered"
+              required />
+            <button class="btn btn-button bg-green-500" id="don">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+          <div id="transaction-history" class="hidden gap-2 text-center font-bold">
+            <h3 id="new">Date</h3>
+            <h2 class="text-4">Transection-history</h2>
+          </div>
+   
+  </main>
+  <script src="js/history.js"></script>
+  <script src="js/donate.js"></script>
+  <script src="js/addMoney.js"></script>
+  <script src="js/functon.js"></script>
+  <script src="js/addMoney2.js"></script>
+  <script src="js/addMoney3.js"></script>
+</body>
+
+</html>
